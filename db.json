@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "casc",
+      "id": "9HhpCRypG4Y"
+    },
+    {
+      "name": "csDC",
+      "id": "_dAxFiPk3qg"
+    },
+    {
+      "name": "ac",
+      "id": "EF0PeRe7XIM"
+    },
+    {
+      "name": "saca",
+      "id": "-ZtRyceb_a8"
+    },
+    {
+      "name": "asd",
+      "id": "kJoO_pViqdo"
+    },
+    {
+      "name": "sadas",
+      "id": "h_bG7n-kmnM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

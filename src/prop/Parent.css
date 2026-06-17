@@ -1,0 +1,36 @@
+.allchild {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.app {
+  background-color: lightgray;
+}
+
+.child {
+  background-color: yellow;
+}
+
+.child1 {
+  background-color: lightblue;
+}
+
+
+.child2.light {
+  background-color: lightgreen;
+  color: black;
+}
+
+
+.child2.dark {
+  background-color: #222;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}

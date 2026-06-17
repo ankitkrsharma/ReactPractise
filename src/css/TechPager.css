@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 1300px;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.top {
+  display: flex;
+}
+
+.top-left {
+  width: 60%;
+  background-color: #014b73;
+  color: white;
+  padding: 30px;
+  border-bottom-right-radius: 200px;
+}
+
+.profile-section {
+  display: flex;
+}
+
+.profile-section img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid white;
+}
+
+.top-right {
+  width: 40%;
+  padding: 30px;
+}
+
+.top-right p {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #080808;
+}
+
+.bottom {
+  display: flex;
+}
+
+.left-panel {
+  width: 30%;
+  background-color: #eeeeee;
+  padding: 30px;
+  border-top-right-radius: 200px;
+}
+
+.left-panel h2 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.left-panel ul {
+  margin-left: 20px;
+}
+
+.left-panel li {
+  margin-bottom: 12px;
+}
+
+.right-panel {
+  width: 70%;
+  padding: 30px;
+}
+
+.right-panel h2 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.project-box {
+  border: 2px dashed gray;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.project-box h3 {
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.project-box p {
+  line-height: 28px;
+}

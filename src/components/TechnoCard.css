@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.technocard-body {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 1000px;
+  height: 700px;
+  background: white;
+  border: 4px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-section {
+  width: 55%;
+  height: 400px;
+  background: white;
+  color: black;
+  padding: 30px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.name {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.info {
+  margin-top: 20px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.right-section {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 45%;
+  text-align: center;
+}
+
+.top-logo-center img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.quote {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 40px;
+  color: #111;
+}
+
+.qr-section {
+  position: absolute;
+  left: 40px;
+  bottom: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.qr-section img {
+  width: 170px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.qr-section img:hover {
+  transform: scale(1.05);
+}
+
+.qr-text {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #444;
+}
+
+.table-section {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  width: 60%;
+}
+
+.table-section table {
+  width: 100%;
+  border-spacing: 0 8px;
+}
+
+.table-section th {
+  background: #dff3fa;
+  color: #0077aa;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 16px;
+}
+
+.table-section td {
+  background: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 16px;
+}
