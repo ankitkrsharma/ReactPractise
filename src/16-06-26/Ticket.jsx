@@ -7,7 +7,7 @@ export default function Ticket({ ticket, onResolve }) {
 
       {ticket.resolved ? (
         <>
-          <p>✅ Resolved</p>
+          <p>Resolved</p>
           <p>Resolved At: {ticket.time}</p>
         </>
       ) : (

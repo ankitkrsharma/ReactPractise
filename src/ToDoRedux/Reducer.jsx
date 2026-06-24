@@ -1,21 +1,11 @@
-import {
-  ADD_TODO,
-  DELETE_TODO,
-  UPDATE_TODO,
-} from "./Action";
-
 const initialState = {
   todos: [],
 };
 
-const reducer = (
-  state = initialState,
-  action
-) => {
-
+const reducer = (state = initialState, action) => {
   switch (action.type) {
 
-    case ADD_TODO:
+    case "ADD_TODO":
       return {
         ...state,
         todos: [
@@ -27,27 +17,24 @@ const reducer = (
         ],
       };
 
-    case DELETE_TODO:
+    case "DELETE_TODO":
       return {
         ...state,
         todos: state.todos.filter(
-          (todo) =>
-            todo.id !== action.payload
+          (todo) => todo.id !== action.payload
         ),
       };
 
-    case UPDATE_TODO:
+    case "UPDATE_TODO":
       return {
         ...state,
-        todos: state.todos.map(
-          (todo) =>
-            todo.id === action.payload.id
-              ? {
-                  ...todo,
-                  text:
-                    action.payload.text,
-                }
-              : todo
+        todos: state.todos.map((todo) =>
+          todo.id === action.payload.id
+            ? {
+                ...todo,
+                text: action.payload.text,
+              }
+            : todo
         ),
       };
 

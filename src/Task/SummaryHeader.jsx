@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 export default function SummaryHeader() {
   const tickets = useSelector(
-    (state) => state.tickets.allTickets
+    (state) => state.tickets.AllTickets
   );
 
   return (

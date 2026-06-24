@@ -1,83 +1,96 @@
 import { useSelector, useDispatch } from "react-redux";
 
 import {
-  changeStatus,
-  changePriority,
-  toggleStar,
+    changeStatus,
+    changePriority,
+    toggleStar
 } from "./ticketsSlice";
 
 export default function ActionPanel() {
-  const dispatch = useDispatch();
 
-  const tickets = useSelector(
-    (state) => state.tickets.allTickets
-  );
+    const dispatch = useDispatch();
 
-  const selectedTicketId = useSelector(
-    (state) => state.tickets.selectedTicketId
-  );
+    const tickets = useSelector(
+        (state) => state.tickets.AllTickets
+    );
 
-  const ticket = tickets.find(
-    (t) => t.id === selectedTicketId
-  );
+    const selectedTicketId = useSelector(
+        (state) => state.tickets.selectedTicketId
+    );
 
-  if (!ticket) {
-    return <h3>Select Ticket First</h3>;
-  }
+    console.log("Selected Id :", selectedTicketId);
 
-  return (
-    <div>
+    const ticket = tickets.find(
+        (t) => t.id === selectedTicketId
+    );
 
-      <h2>Actions</h2>
 
-      <select
-        value={ticket.status}
-        onChange={(e) =>
-          dispatch(
-            changeStatus({
-              id: ticket.id,
-              status: e.target.value,
-            })
-          )
-        }
-      >
-        <option>Open</option>
-        <option>In Progress</option>
-        <option>Resolved</option>
-      </select>
+    if (!ticket) {
+        return (
+            <h3>Select Ticket First</h3>
+        );
+    }
 
-      <br />
-      <br />
+    return (
+        <div>
 
-      <select
-        value={ticket.priority}
-        onChange={(e) =>
-          dispatch(
-            changePriority({
-              id: ticket.id,
-              priority: e.target.value,
-            })
-          )
-        }
-      >
-        <option>Low</option>
-        <option>Medium</option>
-        <option>High</option>
-      </select>
+            <h2>Action</h2>
 
-      <br />
-      <br />
+            <p>status</p>
 
-      <button
-        onClick={() =>
-          dispatch(toggleStar(ticket.id))
-        }
-      >
-        {ticket.starred
-          ? "Unstar"
-          : "Star"}
-      </button>
+            <select
+                value={ticket.status} onChange={(e) => {
+                    dispatch(
+                        changeStatus({
+                            id: ticket.id,
+                            status: e.target.value
+                        }))
 
-    </div>
-  );
+                }}
+            >
+
+                <option>open</option>
+
+                <option>in progress</option>
+
+                <option>resolved</option>
+
+            </select>
+
+
+
+            <p>priority</p>
+
+            <select
+                value={ticket.priority} onChange={(e) => {
+                    dispatch(
+                        changePriority({
+                            id: ticket.id,
+                            priority: e.target.value
+                        })
+                    );
+                }}
+            >
+
+                <option>Low</option>
+
+                <option>Medium</option>
+
+                <option>High</option>
+
+            </select>
+
+            <button onClick={() => {
+                dispatch(
+                    toggleStar(ticket.id)
+                );
+            }}
+            >
+                
+                {ticket.starred ? "Unstar" : "Star"}
+
+            </button>
+
+        </div>
+    );
 }

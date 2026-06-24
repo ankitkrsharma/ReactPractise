@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  allTickets: [
+  AllTickets: [
      {
       id: "T101",
       customerName: "Riya Sharma",
@@ -59,7 +59,7 @@ const initialState = {
     },
   ],
   selectedTicketId: null,
-  activeFilter: "All",
+  currentFilter: "All",
 };
 
 const ticketsSlice = createSlice({
@@ -72,11 +72,11 @@ const ticketsSlice = createSlice({
     },
 
     setFilter: (state, action) => {
-      state.activeFilter = action.payload;
+      state.currentFilter = action.payload;
     },
 
     changeStatus: (state, action) => {
-      const ticket = state.allTickets.find(
+      const ticket = state.AllTickets.find(
         (t) => t.id === action.payload.id
       );
 
@@ -86,7 +86,7 @@ const ticketsSlice = createSlice({
     },
 
     changePriority: (state, action) => {
-      const ticket = state.allTickets.find(
+      const ticket = state.AllTickets.find(
         (t) => t.id === action.payload.id
       );
 
@@ -96,7 +96,7 @@ const ticketsSlice = createSlice({
     },
 
     toggleStar: (state, action) => {
-      const ticket = state.allTickets.find(
+      const ticket = state.AllTickets.find(
         (t) => t.id === action.payload
       );
 
