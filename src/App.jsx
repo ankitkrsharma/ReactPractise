@@ -6,6 +6,8 @@
 // import SummaryHeader from "./Task/SummaryHeader";
 // import ActionPanel from "./Task/ActionPanel";
 
+import CourseTracker from "./23-06-26/components/CourseTracker";
+
 // export default function App() {
 //   return (
 //     <Provider store={store}>
@@ -111,14 +113,68 @@
 
 
 
-import MyCounter from "./19-06-26/MyCounter";
+// import MyCounter from "./19-06-26/MyCounter";
 
+// function App() {
+//   return (
+//     <>
+//       <MyCounter />
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+
+
+// import Product from "./19-06-26/Product";
+// import Cart from "./19-06-26/Cart";
+
+// function App() {
+//   return (
+//     <>
+//       <Product />
+//       <hr />
+//       <Cart />
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+
+
+import ProductList from "./Task2/ProductList";
+import ProductSummary from "./Task2/ProductSummary";
+import Wishlist from "./Task2/Wishlist";
 function App() {
   return (
-    <>
-      <MyCounter />
-    </>
+    <div className="max-w-4xl mx-auto p-5">
+      <h1 className="text-3xl font-bold text-center mb-6">
+        Zustand Product Manager
+      </h1>
+
+      <ProductList />
+
+      <hr className="my-6" />
+
+      <ProductSummary />
+
+      <hr className="my-6" />
+
+      <Wishlist />
+    </div>
   );
 }
 
 export default App;
+
+
+
+// function App() {
+//   return <CourseTracker />;
+// }
+
+// export default App;

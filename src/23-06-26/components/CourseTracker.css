@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 30px;
+  background: #ffffff;
+  font-family: Cambria, Georgia, serif;
+  color: #222;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #284b73;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #7d99b8;
+  padding-bottom: 12px;
+}
+
+.objective {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.objective h3,
+.instructions h3 {
+  color: #355d8c;
+  font-size: 20px;
+  font-family: "Segoe UI", sans-serif;
+  margin-bottom: 10px;
+}
+
+.objective p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.instructions ul {
+  margin-top: 10px;
+  padding-left: 28px;
+}
+
+.instructions li {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+th,
+td {
+  border: 1px solid #555;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background: #f8f8f8;
+  font-weight: normal;
+}
+
+.green {
+  background: #d4edda;
+}
+
+.amber {
+  background: #fff3cd;
+}
+
+.red {
+  background: #f8d7da;
+}
+
+select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #777;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #355d8c;
+}
